@@ -1,4 +1,4 @@
-# Mango-Grade-Prediction
+# Mango-Grade-Classifcation
 About the dataset:
 
 The dataset contains physical measurement of Harumanis Mango (clone number MA 128) collected from the Fruit Collection Center, FAMA Perlis, Malaysia.
