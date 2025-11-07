@@ -6,8 +6,8 @@ import os
 # model = pickle.load(open(r'C:\Users\Desktop\Desktop\ds_project\kaggle\mango/model.pkl', 'rb'))
 
 model_path = os.path.join(os.path.dirname(__file__), 'model.pkl')
-                          with open(model_path, 'rb') as file:
-                              model = pickle.load(file)
+with open(model_path, 'rb') as file:
+  model = pickle.load(file)
 
 
 def main():
@@ -31,4 +31,5 @@ def main():
         st.success(f"Your mango grade is {prediction[0]}")
 
 main()
+
 
