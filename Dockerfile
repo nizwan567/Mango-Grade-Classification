@@ -10,6 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.org/simple --
 
 COPY . .
 
-EXPOSE 8501
+EXPOSE 80
 
 CMD ["streamlit", "run", "app.py", "--server.port=80", "--server.address=0.0.0.0"]
