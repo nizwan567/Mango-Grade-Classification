@@ -1,0 +1,10 @@
+__pycache__/
+*.csv
+*ipynb
+.env
+.git
+<<<<<<< HEAD
+.md
+=======
+.md
+>>>>>>> 7c3f2f0fd30a88f416d5430d11b85d8843aa3bb6
