@@ -1,6 +1,7 @@
 __pycache__/
 *.csv
 *ipynb
+*model.pkl
 .env
 .git
 <<<<<<< HEAD
