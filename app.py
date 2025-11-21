@@ -12,7 +12,7 @@ with open(model_path, 'rb') as file:
 
 def main():
     # Set the app title
-    st.title("Mango Grade Prediction")
+    st.title("Grade Your Mango")
 
     # Create input fields for weight, length, and circumference
     weight = st.number_input("Weight (g)")
@@ -20,7 +20,7 @@ def main():
     circumference = st.number_input("Circumference (cm)")
 
     # Create a button for prediction
-    if st.button("Predict"):
+    if st.button("Grade"):
         # Create a DataFrame with the user's input
         data = pd.DataFrame({'Weight': [weight], 'Length': [length], 'Circumference': [circumference]})
 
@@ -31,5 +31,6 @@ def main():
         st.success(f"Your mango grade is {prediction[0]}")
 
 main()
+
 
 
