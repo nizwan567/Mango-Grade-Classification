@@ -8,7 +8,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.org/simple --timeout=200 --retries=5
 
-COPY . 
+COPY . .
 
 EXPOSE 8501
 
