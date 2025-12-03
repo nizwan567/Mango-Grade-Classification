@@ -5,14 +5,8 @@ import os
 
 # model = pickle.load(open(r'C:\Users\Desktop\Desktop\ds_project\kaggle\mango/model.pkl', 'rb'))
 
-import streamlit as st
-import pandas as pd
-import pickle
-import os
-
 # Get path to model.pkl inside Docker & locally
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
 
 # Load Model
 with open(model_path, "rb") as file:
@@ -39,6 +33,7 @@ def main():
         st.success(f"Your mango grade is {prediction[0]}")
 
 main()
+
 
 
 
